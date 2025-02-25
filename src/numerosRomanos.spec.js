@@ -13,6 +13,9 @@ describe("Convertir a romanos", () => {
   it("deberia retornar IV", () => {
     expect(convertirARomano(4)).toEqual("IV");
   });
+  it("deberia retornar VI", () => {
+    expect(convertirARomano(6)).toEqual("VI");
+  });
 
 
 });
