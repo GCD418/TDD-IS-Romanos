@@ -1,10 +1,10 @@
 import convertirARomano from "./numerosRomanos";
 
 describe("Convertir a romanos", () => {
-  it("deberia retornar 1", () => {
+  it("deberia retornar I", () => {
     expect(convertirARomano(1)).toEqual("I");
   });
-  it("deberia retornar 2", () => {
+  it("deberia retornar II", () => {
     expect(convertirARomano(2)).toEqual("II");
   });
 });
