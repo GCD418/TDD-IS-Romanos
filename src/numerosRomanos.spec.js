@@ -43,6 +43,9 @@ describe("Convertir a romanos", () => {
   it("deberia retornar D", () => {
     expect(convertirARomano(500)).toEqual("D");
   });
+  it("deberia retornar CD", () => {
+    expect(convertirARomano(400)).toEqual("CD");
+  });
 
 
 });
