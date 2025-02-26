@@ -1,4 +1,5 @@
 const numerosRomanos = {
+  'M': 1000,
   'D': 500,
   'CD': 400,
   'C': 100,
