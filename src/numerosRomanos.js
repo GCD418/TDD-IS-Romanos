@@ -1,11 +1,19 @@
+const numerosRomanos = {
+  'X': 10,
+  'V': 5,
+  'IV': 4,
+  'I': 1,
+};
 function convertirARomano(numero) {
-  if(numero >= 10)
-    return 'X' + convertirARomano(numero - 10);
-  if (numero >= 5) 
-    return 'V' + convertirARomano(numero - 5);
-  if(numero === 4)
-    return 'IV';
-  return ('I').repeat(numero);
+  let romano = '';
+  for (let simbolo in numerosRomanos) {
+    let valor = numerosRomanos[simbolo];
+    while (numero >= valor) {
+      romano += simbolo;
+      numero -= valor;
+    }
+  }
+  return romano;
 }
 
 export default convertirARomano;
