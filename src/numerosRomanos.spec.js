@@ -19,6 +19,9 @@ describe("Convertir a romanos", () => {
   it("deberia retornar VII", () => {
     expect(convertirARomano(7)).toEqual("VII");
   });
+  it("deberia retornar X", () => {
+    expect(convertirARomano(10)).toEqual("X");
+  });
 
 
 });
