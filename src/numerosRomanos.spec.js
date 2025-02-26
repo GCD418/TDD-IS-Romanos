@@ -49,5 +49,8 @@ describe("Convertir a romanos", () => {
   it("deberia retornar M", () => {
     expect(convertirARomano(1000)).toEqual("M");
   });
+  it("deberia retornar CM", () => {
+    expect(convertirARomano(900)).toEqual("CM");
+  });
 
 });
